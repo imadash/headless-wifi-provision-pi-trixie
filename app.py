@@ -5,7 +5,7 @@ Captive portal for customers to input WiFi credentials on a headless Raspberry P
 Designed for Pi 4 B running Trixie Full (Debian 13) with NetworkManager.
 
 Key design notes:
-- Runs on port 8080 (lighttpd uses 80 for MagicMirror/Senses)
+- Runs on port 8080 
 - iptables redirects port 80 → 8080 during AP mode
 - When wlan0 is in AP mode, live scans return nothing → falls back to cached scan
 - Handles "2437 MHz" frequency format from nmcli
